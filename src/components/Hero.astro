@@ -1,0 +1,48 @@
+---
+import Badge from "./Badge.astro"
+import SocialPill from "./SocialPill.astro"
+import MailIcon from "../components/icons/Mail.astro"
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+
+const personalImageAlt = "Victor Bustos"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://scontent.fsyq6-1.fna.fbcdn.net/v/t1.6435-9/98205067_3064318760304440_1154163823897214976_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Poh2tyQnW98Q7kNvwHK5XYQ&_nc_oc=Adl1IvP5zvhBxi6PduQaGXNlyciF1v37Jbb2JJHWGnRgj50Kop7vdTFO9ia25viT4x8&_nc_zt=23&_nc_ht=scontent.fsyq6-1.fna&_nc_gid=W3D4v6fkJOqmB-zEVYrLow&oh=00_AfHJA79uWagp5xy-dsj8BzQV_xpOoCFKOsCC46Lq6mVzDg&oe=682E534D"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/victor-bustos16"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+  Hola, soy victor.
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+      <strong>Soy un estudiante avanzado de Ingeniería en Sistemas de Información en la Universidad Nacional de Costa Rica</strong
+    > actualmente cursando mi último año. Me destaco por habilidades técnicas en desarrollo full-stack y acompañado de grandes cualidades como lo son el trabajo en equipo, la proactividad y la responsabilidad. 
+    
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:vicjimenezbustosdev@gmail.com">
+      <MailIcon  class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/victor-jimenez-bustos16">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>

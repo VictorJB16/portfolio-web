@@ -1,0 +1,57 @@
+---
+const cvUrl = "/Victor_Jimenez_Bustos_CV.pdf"; // Asegúrate de colocar tu archivo cv.pdf en la carpeta 'public'
+---
+
+<section class="about-me">
+  <p class="about-text">
+    ¡Hola! Soy una persona apasionada por los <strong>videojuegos</strong>, la <strong>música</strong> y el <strong>ejercicio</strong>. Disfruto explorar nuevos mundos virtuales, y géneros musicales, y mantenerme activo para cuidar mi salud física y mental. Siempre busco aprender cosas nuevas y superarme día a día.
+  </p>
+  <div class="cv-section">
+    <h3>Descarga mi CV</h3>
+    <a href={cvUrl} download class="cv-download-btn">
+      Descargar 
+    </a>
+  </div>
+</section>
+
+<style>
+.about-me {
+  /* Elimina el fondo blanco y usa fondo transparente o igual al fondo general */
+  background: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+.about-me h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+}
+.about-text {
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 0;
+}
+.cv-section {
+  margin-top: 2rem;
+}
+.cv-download-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.cv-download-btn:hover {
+  background: #005fcc;
+}
+</style>
